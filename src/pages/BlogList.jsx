@@ -28,12 +28,8 @@ const BlogList = () => {
                     </div>
                 ))
             }
-
         </>
-
     )
-
 }
-
 
 export default BlogList
