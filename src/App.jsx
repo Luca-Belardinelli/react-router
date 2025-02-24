@@ -9,18 +9,22 @@ import AboutUs from "./pages/AboutUs";
 import BlogList from "./pages/BlogList";
 
 
-
+// LAYOUT
+import DefaultLayout from "./layouts/DefaultLayout";
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/Blogs" element={<BlogList />} />
+        <Route element={<DefaultLayout />} >
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/Blogs" element={<BlogList />} />
+        </Route>
       </Routes>
-    </BrowserRouter>
+
+    </BrowserRouter >
   )
 }
 
