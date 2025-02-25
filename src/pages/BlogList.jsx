@@ -17,6 +17,7 @@ const BlogList = () => {
     useEffect(fetchPosts, []);
     return (
         <>
+            <h1>Lista blog</h1>
             {/* MAP */}
             {
                 blogs.map((post) => (
@@ -25,6 +26,7 @@ const BlogList = () => {
                         <img src={post.image} alt={post.title} />
                         <p>{post.content}</p>
                         <span>{post.tags} </span>
+                        <button>Cancella</button>
                     </div>
                 ))
             }
