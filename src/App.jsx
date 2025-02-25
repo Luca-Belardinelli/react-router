@@ -7,6 +7,8 @@ import AboutUs from "./pages/AboutUs";
 
 // LISTA DEI BLOG
 import BlogList from "./pages/BlogList";
+import AddBlog from "./pages/AddBlog";
+
 
 
 // LAYOUT
@@ -21,6 +23,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/Blogs" element={<BlogList />} />
+          <Route path="/Blogs/create" element={<AddBlog />} />
         </Route>
       </Routes>
 
